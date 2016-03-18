@@ -1,0 +1,126 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+.container {
+text-align: center;
+  width: 1000px;
+    margin: 0 auto;
+}
+#table tr{
+    text-align: left;
+}
+#table thead tr{
+    background-color: #000;
+    color: #fff;
+}
+
+#table tbody tr:nth-child(even){
+background-color: #d0cec2;
+}
+#table tbody tr:nth-child(1),tr:nth-child(2),tr:nth-child(3){
+   color:#f8292f;
+}
+#input{
+    margin-top: 50px;
+}
+#input input{
+    width: 100px;
+   transition: width 1s;
+}
+#input input:focus{
+    width: 200px;
+}
+#input input:hover{
+    width: 200px;
+}
+#vivepager{
+    margin-top: 100px;
+    position: relative;
+    width: 270px;
+    height: 110px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#vivepager .img-box{
+    position: relative;
+    width:810px;
+    animation:slide1 6s ease-in-out  infinite;
+}
+#vivepager img{
+    width: 270px;
+    height: 110px;
+    float: left;
+
+}
+ #target1:target ~ .img-box{
+     animation:slide1 10s ease-in-out  infinite;
+}
+ #target2:target ~ .img-box{
+     animation:slide2 10s ease-in-out  infinite;
+}
+ #target3:target ~ .img-box{
+     animation:slide3 10s ease-in-out  infinite;
+}
+#vivepager .banner{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#vivepager .banner a{
+    text-decoration: none;
+    color: #fff;
+}
+#vivepager .banner ul li{
+    float: left;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #807aff;
+    margin-left:2px;
+    cursor: pointer;
+}
+@keyframes slide1 {
+    0%{left:0 }
+    12.5%{left:0}
+   25%{left:-270px }
+    37.5%{left:-270px}
+    50%{left:-540px }
+    62.5%{left:-540px}
+    75%{left:-270px }
+    87.5%{left:-270px}
+    100%{left:0 }
+    112.5%{left:0}
+}
+@keyframes slide2 {
+    0%{left:-270px }
+    12.5%{left:-270px }
+    25%{left:-540px }
+    37.5%{left:-540px }
+    50%{left:-270px }
+    62.5%{left:-270px }
+    75%{left:0 }
+    87.5%{left:0 }
+    100%{left:-270px }
+    112.5%{left:-270px }
+}
+@keyframes slide3 {
+    0%{left:-540px }
+    12.5%{left:-540px }
+    25%{left:-270px }
+    37.5%{left:-270px }
+    50%{left:0 }
+    62.5%{left:0 }
+    75%{left:-270px }
+    87.5%{left:-270px }
+    100%{left:-540px }
+    112.5%{left:-540px }
+}
+
+
+
+
+
+

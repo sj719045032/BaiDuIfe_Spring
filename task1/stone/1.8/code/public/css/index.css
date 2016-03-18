@@ -1,5 +1,4 @@
 .container {
-    width: 80%;
     padding: 20px;
     margin: 0 auto;
     border: 1px solid #999;
@@ -13,13 +12,13 @@
 .row>div {
     display: inline-block;
     box-sizing: border-box;
-    margin-bottom: 20px;
     padding: 0 10px;
 }
 .content{
     height: 50px;
     border: 1px solid #999;
     background-color: #eee;
+    margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
     .col-md-1 {

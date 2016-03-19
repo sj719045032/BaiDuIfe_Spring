@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#table tr {
+    text-align: left;
+}
+
+#table thead tr {
+    background-color: #000;
+    color: #fff;
+}
+
+#table tbody tr:nth-child(even) {
+    background-color: #d0cec2;
+}
+
+#table tbody tr:nth-child(1), tr:nth-child(2), tr:nth-child(3) {
+    color: #f8292f;
+}
+
+#input {
+    margin-top: 50px;
+}
+
+#input input {
+    width: 100px;
+    transition: width 1s;
+}
+
+#input input:focus {
+    width: 200px;
+}
+
+#input input:hover {
+    width: 200px;
+}
+
+#vivepager {
+    margin-top: 100px;
+    position: relative;
+    width: 270px;
+    height: 110px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#vivepager .img-box {
+    position: relative;
+    width: 270px;
+    height: 110px;
+}
+
+#vivepager img {
+    width: 270px;
+    height: 110px;
+    position: absolute;
+    transition: left 2s;
+   top: 0;
+}
+
+#img1 {
+    left: 0;
+}
+
+#img2 {
+    left: 100%;
+}
+
+#img3 {
+    left:200%;
+}
+
+#target1:target ~ #img1 {
+    left: 0;
+}
+
+#target1:target ~ #img2 {
+    left: 100%;
+}
+
+#target1:target ~ #img3 {
+    left: 200%;
+}
+
+#target2:target ~ #img2 {
+    left: 0;
+}
+
+#target2:target ~ #img1 {
+    left: -100%;
+}
+
+#target2:target ~ #img3 {
+    left: 100%;
+}
+
+#target3:target ~ #img3 {
+    left: 0;
+}
+
+#target3:target ~ #img1 {
+    left: -200%;
+}
+
+#target3:target ~ #img2 {
+    left: -100%;
+}
+
+#vivepager .banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#vivepager .banner a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#vivepager .banner ul li {
+    float: left;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #807aff;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+
+

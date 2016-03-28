@@ -509,7 +509,16 @@ a {
           color: #aaaaaa;
         }
         a {
+          color: #aaaaaa;
           float: right;
+          &:before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 6px;
+            background: url("../img/more.png");
+            margin-right: 10px;
+          }
         }
       }
     }

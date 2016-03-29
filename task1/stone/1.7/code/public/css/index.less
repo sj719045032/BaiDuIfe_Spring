@@ -187,7 +187,6 @@ a {
     background-color: rgba(170, 53, 51, 0.2);
     padding-top: 50px;
     h2 {
-
       font-size: 21px;
       margin: 0;
 
@@ -210,6 +209,7 @@ a {
       > li {
         margin: 0 15px;
         input {
+          border: none;
           font-family: @font1;
           box-sizing: border-box;
           width: 235px;
@@ -219,7 +219,8 @@ a {
           color: #a8aaaa;
           background: #fff url("../img/btn_pulldown.png") no-repeat 97% 50%;
           &:focus {
-            outline: 1px solid #be4e48;
+            border: 1px solid #be4e48;
+            outline: none;
           }
 
         }
@@ -612,6 +613,7 @@ footer {
       padding-left: 10px;
       font-family: @font1;
       font-size: 14px;
+      vertical-align: middle;
     }
     button {
       box-sizing: border-box;
@@ -623,6 +625,7 @@ footer {
       color: #fff;
       font-family: @font1;
       font-size: 15px;
+      vertical-align: middle;
     }
   }
 

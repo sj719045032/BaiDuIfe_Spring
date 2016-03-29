@@ -43,7 +43,7 @@
                 <form>
                     <ul>
                         <li><input name="country" placeholder="国家" value="中国"></li>
-                        <li><input name="province" placeholder="省份" autofocus="autofocus">
+                        <li><input name="province" placeholder="省份">
                             <ul class="drop-down">
                                 <li>北京市</li>
                                 <li>天津市</li>
@@ -94,10 +94,11 @@
             <ul>
                 <li><span>新时代<br>关于爱生活我们</span><span class="line"></span><a href="">查看更多</a></li>
                 <li><span>新时代<br>关于爱生活我们</span><span class="line"></span><a href="">查看更多</a></li>
-                <li></li>
+                <li><div class="mask"></div></li>
             </ul>
         </section>
         <section id="section8"><h2>成为我们的志愿者</h2><span class="line"></span><span class="description"></span>
+
             <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p>
 
             <div>
@@ -116,14 +117,15 @@
                     <table>
                         <tr>
                             <td><label for="name">姓名:</label><input id="name"></td>
-                            <td><label for="age">年龄：</label><input id="age"></td>
+                            <td><label for="age">年龄:</label><input id="age"></td>
                         </tr>
                         <tr>
-                            <td><label for="contact">联系方式</label><input id="contact"></td>
-                            <td><label for="address">联系地址：</label><input id="address"></td>
+                            <td><label for="contact">联系方式:</label><input id="contact"></td>
+                            <td><label for="address">联系地址:</label><input id="address"></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><label for="description"></label><textarea id="description"></textarea></td>
+                            <td colspan="2"><label for="description">请简单描述您梦想的生活：</label><textarea
+                                    id="description"></textarea></td>
                         </tr>
                         <tr>
                             <td colspan="2"><input type="submit" value="提交申请"></td>
@@ -133,7 +135,23 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section><h2>联系我们</h2>
+            <span>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯 也可以通过以下任何方式关注我们动态</span>
+
+            <form><input type="text" placeholder="someone@email.com"><button type="submit">提交</button>
+            </form>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </section>
+        <div class="bottom">
+            <span>@2016新世界</span><a href="#header">Back to top</a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
